@@ -57,6 +57,16 @@ button{
     border-radius: 40px;
 
 }
+button.info{
+    border: none;
+    outline: none;
+    padding: 16px 10px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 800px;
+}
 
 ul li{
     list-style:  none;
