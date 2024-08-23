@@ -12,9 +12,7 @@
     padding: 10px;
 }
 
-
-
-.add-goals{
+.menu{
     width: 100%;
     max-width: 540px;
     background: #fff;
@@ -23,38 +21,15 @@
     border-radius: 10px;
 }
 
-.add-goals h2{
+.menu h2{
     color: #002765;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-/*
-.add-goals h2::after{
-    content: '';
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    background-image: url(../images/home.png);
-    background-size: cover;
-    background-position: center;
-    top: 12px;
-    left: 8px;
-}
-.add-goals h2:hover::after{
-    background-image: url(../images/homeFilled.png);
-    
-}*/
 
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #edeef0;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 25px;
-}
+
+
 
 input{
     flex: 1;
@@ -143,11 +118,3 @@ ul li span:hover{
     background: #edeef0;
 }
 
-.menu{
-    width: 100%;
-    max-width: 540px;
-    background: #fff;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
-    border-radius: 10px;
-}
