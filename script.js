@@ -27,8 +27,12 @@ listContainer.addEventListener("click",function(e){
         saveData();
     }
     else if(e.target.tagName === "SPAN"){
-        e.target.parentElement.remove();
-        saveData();
+        let result = confirm("Are you sure you want to delete this?");
+        if(result){
+            e.target.parentElement.remove();
+            saveData();
+        }
+        
     }
     
 }, false);
