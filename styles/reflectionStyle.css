@@ -50,6 +50,36 @@ button{
     border-radius: 40px;
 
 }
+
+button.left-option{
+    
+    border-right: solid;
+    width: 50%;
+    
+    background: linear-gradient(#ff5945,transparent);
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #002765;
+    
+
+}
+button.right-option{
+    
+    border-left: solid;
+    
+    width:50%;
+    background: linear-gradient(#ff5945,transparent);
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #002765;
+    
+
+}
+.options{
+    display: flex;
+}
 button.info{
     border: none;
     outline: none;
