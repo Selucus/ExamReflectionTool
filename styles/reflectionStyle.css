@@ -56,7 +56,7 @@ button.left-option{
     border-right: solid;
     width: 50%;
     
-    background: linear-gradient(#ff5945,transparent);
+    background: linear-gradient(#555,transparent);
     border-radius: 0px;
     cursor: pointer;
     font-size: 16px;
@@ -64,18 +64,22 @@ button.left-option{
     
 
 }
+
 button.right-option{
     
     border-left: solid;
     
     width:50%;
-    background: linear-gradient(#ff5945,transparent);
+    background: linear-gradient(#555,transparent);
     border-radius: 0px;
     cursor: pointer;
     font-size: 16px;
     color: #002765;
     
 
+}
+button.selected{
+    background: linear-gradient(#ff5945,transparent);
 }
 .options{
     display: flex;
@@ -114,6 +118,7 @@ ul li{
     position: relative;
     overflow-wrap: normal;
 }
+/*
 ul li::before{
     content: '';
     position: absolute;
@@ -131,7 +136,7 @@ ul li.checked{
 }
 ul li.checked::before{
     background-image: url(../images/checked.png);
-}
+}*/
 ul li span{
     position: absolute;
     right: 0;
@@ -157,6 +162,7 @@ ul li{
     position: relative;
     overflow-wrap: normal;
 }
+/*
 ul li::before{
     content: '';
     position: absolute;
@@ -174,7 +180,7 @@ ul li.checked{
 }
 ul li.checked::before{
     background-image: url(../images/checked.png);
-}
+}*/
 ul li span{
     position: absolute;
     right: 0;

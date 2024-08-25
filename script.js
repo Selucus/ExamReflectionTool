@@ -21,7 +21,14 @@ function addGoal(){
     saveData('goal');
 }
 function addRef(){
-    
+    l = document.getElementsByClassName("left-option");
+    if(l[0].classList.contains("selected")){
+        // on www page
+        addWWW();
+    }else{
+        addEBI();
+        
+    } 
 }
 function addWWW(){
     if(inputBox.value === ''){
@@ -68,7 +75,17 @@ function flip(){
 listContainer.addEventListener("click",function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
-        saveData('goal');
+        if(window.location.pathname==='/reflectionManager.html'){
+            l = document.getElementsByClassName("left-option");
+            if(l[0].classList.contains("selected")){
+                // on www page
+                saveData('www')
+            }else{
+                saveData('ebi');
+            }
+        } else{
+            saveData('goal');
+        }
     }
     else if(e.target.tagName === "SPAN"){
         let result = confirm("Are you sure you want to delete this?");
@@ -145,10 +162,10 @@ if(window.location.pathname==='/reflectionManager.html'){
     l = document.getElementsByClassName("left-option");
     if(l[0].classList.contains("selected")){
         // on www page
-        saveData('www')
+        showList('www')
     }else{
-        saveData('ebi');
+        showList('ebi');
     }
 } else{
-    saveData('goal');
+    showList('goal');
 }
